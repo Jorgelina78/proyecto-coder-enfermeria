@@ -30,6 +30,7 @@ header {
     background-color: darkgrey;
     color: black;
     padding: 1rem;
+
 }
 
 header h1 {
@@ -47,8 +48,26 @@ header form {
     display: none;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
 
+.grid-item {
+    position: relative;
+}
 
+.grid-item img {
+    width: 70%;
+}
+
+.grid-item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /*Galeria*/
 
@@ -93,7 +112,7 @@ header form {
         display: flex;
         justify-content: end;
         align-items: center;
-        gap: 0,5rem;
+        gap: 0, 5rem;
     }
 
     header nav {
@@ -127,24 +146,48 @@ header form {
         grid-column: span 2;
         grid-row: span 2;
     }
+
 }
+
 /*desktop*/
 @media(min-width:1200px) {
-    header{
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+}
 
-    }
-    .contenedor-galeria {
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-    }
+.contenedor-galeria {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+}
 
-    .contenedor-galeria img.imagen-destacada {
-        grid-column: span 1;
-        grid-row: span 2;
-    }
+.contenedor-galeria img.imagen-destacada {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+footer{
+    background-color: black;
+    color: azure;
+    padding: 1rem;
+    
+}
+footer h4{
+    font-size: 1.5rem;
+    margin-bottom: 0,6rem;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 0.2rem;
+    text-align: center;
+
 }
