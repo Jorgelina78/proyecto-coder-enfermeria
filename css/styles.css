@@ -38,25 +38,63 @@ header {
 header h1 {
     text-align: center;
     margin-bottom: 1rem;
+    font-family: cursive;
+
 }
 
-header li {
+header ul {
     text-align: center;
     list-style: none;
     margin-bottom: 1rem;
 }
 
+/*
+header ul a{
+    color: darkmagenta;
+    font-family: fantasy;
+    font-size: 20px;
+
+}
+*/
 header form {
     display: none;
 }
 
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+.caja-familia {
+    background-color: darkgrey;
+    color: black;
+    padding: 5% 40% 5% 5%;
+    margin: 2% 0% 2% 0%;
+    position: relative;
+
 }
-*/
+.imagen-caja-familia{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 25%;
+}
+/*seccion enfermeria en casa*/
+
+.grid-container-encasa {
+    background-color: grey;
+    height: auto;
+    align-items: stretch;
+    display: grid;
+    gap: 1rem;
+    margin: 0% 10% 0% 10%;
+}
+
+.imagenes-container-encasa {
+    display: grid;
+    text-align: center;
+    background-color: beige;
+    font-size: 1rem;
+    margin: 1% 20% 0% 20%;
+    padding: 2% 10% 2% 10%;
+}
+
+/*
 .grid-item {
     position: relative;
 }
@@ -71,18 +109,21 @@ header form {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+*/
 .titulo-destacadas {
     background-color: cornflowerblue;
     text-align: center;
+    height: auto;
 }
 
-.contenedor {
+.contenedor-vertical-central {
     background-color: grey;
-    height: 180vh;
+    height: auto;
+    align-items: stretch;
     display: grid;
     gap: 1rem;
     margin: 0% 10% 0% 10%;
+
 }
 
 .tarjeta-importancia {
@@ -96,26 +137,32 @@ header form {
 
 .tarjeta-humanista {
     display: grid;
+    text-align: center;
     background-color: beige;
     font-size: 1rem;
-    margin: 1% 10% 0% 10%;
+    margin: 1% 20% 0% 20%;
+    padding: 2% 10% 2% 10%;
 }
 
 .tarjeta-realidad {
     display: grid;
+    text-align: center;
     background-color: beige;
     font-size: 1rem;
-    margin: 1% 10% 0% 10%;
+    margin: 1% 20% 0% 20%;
+    padding: 2% 10% 2% 10%;
 }
 
 .otras-tarjetas {
     display: grid;
+    text-align: center;
     background-color: beige;
     font-size: 1rem;
-    margin: 1% 10% 1% 10%;
+    margin: 1% 20% 2% 20%;
+    padding: 2% 10% 2% 10%;
 }
 
-/*Galeria*/
+/*Galeria cuidados en casa*/
 
 .letra-titulos {
     font-size: 2rem;
@@ -156,7 +203,7 @@ header form {
 
     header form {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
         gap: 0, 5rem;
     }
@@ -182,8 +229,7 @@ header form {
 
     .contenedor-galeria {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 300px);
+
     }
 
     .contenedor-galeria img.imagen-destacada {
@@ -193,9 +239,12 @@ header form {
         grid-row: span 2;
     }
 
+
+
 }
 
 /*desktop*/
+
 @media(min-width:1200px) {
     header {
         display: flex;
