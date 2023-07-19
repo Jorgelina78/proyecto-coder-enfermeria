@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+img {
+    max-width: 100%;
+}
+
+.parrafos {
+    background-color: black;
+}
+
+
+.caja-formulario {
+    background-color: beige;
+    padding: 20px;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario-input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.formulario-button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: 0, 5rem;
+
+}
