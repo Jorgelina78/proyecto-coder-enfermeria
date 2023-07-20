@@ -1,5 +1,5 @@
 .caja-formulario {
-    background-color: beige;
+    background-color: $color-fondo-primario;
     padding: 20px;
 }
 
@@ -15,7 +15,6 @@
 
 .formulario-button {
     padding: 10px 20px;
-    background-color: blueviolet;
-    color: white;
+    background-color: $color-primario;
     border: 0, 5rem;
 }

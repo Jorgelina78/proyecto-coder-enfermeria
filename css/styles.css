@@ -23,8 +23,8 @@ img {
 }
 
 footer {
-  background-color: black;
-  color: azure;
+  background-color: #000000;
+  color: grey;
   padding: 1rem;
 }
 
@@ -58,8 +58,8 @@ footer ul li {
   }
 }
 header {
-  background-color: darkgrey;
-  color: black;
+  background-color: grey;
+  color: #000000;
   padding: 1rem;
 }
 
@@ -125,8 +125,7 @@ header form {
 
 .formulario-button {
   padding: 10px 20px;
-  background-color: blueviolet;
-  color: white;
+  background-color: grey;
   border: 0, 5rem;
 }
 
@@ -145,7 +144,6 @@ header form {
   align-items: stretch;
   gap: 1rem;
 }
-
 .contenedor-galeria img {
   max-height: 350px;
   object-fit: cover;
@@ -191,8 +189,8 @@ header form {
 }
 
 .caja-familia {
-  background-color: darkgrey;
-  color: black;
+  background-color: grey;
+  color: #000000;
   padding: 5% 40% 5% 5%;
   margin: 2% 0% 2% 0%;
   position: relative;
@@ -232,10 +230,11 @@ header form {
   background-color: beige;
   margin: 1% 20% 0% 20%;
   padding: 2% 10% 2% 10%;
-  box-shadow: 10px 10px 10px 10px #000000;
 }
 .tarjeta-importancia:hover {
+  transition: 0.5s;
   background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
+  box-shadow: 10px 10px 10px 10px #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

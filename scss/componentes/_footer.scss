@@ -1,9 +1,7 @@
 footer {
-    background-color: black;
-    color: azure;
+    background-color: $color-sombras-primario;
+    color: $color-primario;
     padding: 1rem;
-
-
 }
 
 footer h4 {
@@ -16,23 +14,17 @@ footer ul li {
     list-style: none;
     margin-bottom: 0.2rem;
     text-align: center;
-
 }
-
-
 
 @media (min-width:768px) {
 
 }
-
-
 
 @media (min-width:1200px){
     footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
     
     footer h4 {
@@ -45,6 +37,5 @@ footer ul li {
         list-style: none;
         margin-bottom: 0.2rem;
         text-align: center;
-    
     }
 }

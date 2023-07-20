@@ -1,6 +1,6 @@
 .caja-familia {
-    background-color: darkgrey;
-    color: black;
+    background-color: $color-primario;
+    color: $color-sombras-primario;
     padding: 5% 40% 5% 5%;
     margin: 2% 0% 2% 0%;
     position: relative;
@@ -18,7 +18,7 @@
 }
 
 .titulo-destacadas {
-    background: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
+    background: $color-degradee-primario;
     text-align: center;
     height: auto;
 }
@@ -32,18 +32,17 @@
     margin: 0% 10% 1% 10%;
     padding: 2% 1% 2% 1%;
     box-shadow: 14px 14px 14px 14px #000000;
-
-
 }
 
 .tarjeta-importancia {
     @include formato-texto-tarjetas;
     display: grid;
-    background-color: beige;
+    background-color: $color-fondo-primario;
     margin: 1% 20% 0% 20%;
     padding: 2% 10% 2% 10%;
-    box-shadow: 10px 10px 10px 10px #000000;
     &:hover {
-        background: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
+        transition:.5s;
+        background: $color-degradee-primario;
+        box-shadow: 10px 10px 10px 10px $color-sombras-primario;
     }
 }

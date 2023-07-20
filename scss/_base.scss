@@ -18,8 +18,13 @@ img {
     font-size: 1rem;
 }
 
+$color-primario: grey;
+$color-fondo-primario: beige;
+$color-degradee-primario: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
+$color-sombras-primario: #000000;
+
 .caja-contenedora-principal {
-    background-color: grey;
+    background-color: $color-primario;
     height: auto;
     align-items: stretch;
     display: grid;
