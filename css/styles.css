@@ -1,274 +1,241 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.parrafos {
-    background-color: black;
-}
-
-.caja-formulario {
-    background-color: beige;
-    padding: 20px;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: row;
-}
-
-.formulario-input {
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.formulario-button {
-    padding: 10px 20px;
-    background-color: blueviolet;
-    color: white;
-    border: 0, 5rem;
+.caja-contenedora-principal {
+  background-color: grey;
+  height: auto;
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  margin: 0% 10% 0% 10%;
 }
 
 footer {
-    background-color: black;
-    color: azure;
-    padding: 1rem;
+  background-color: black;
+  color: azure;
+  padding: 1rem;
 }
 
 footer h4 {
-    font-size: 1.5rem;
-    margin-bottom: 0, 6rem;
-    text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0, 6rem;
+  text-align: center;
 }
 
 footer ul li {
+  list-style: none;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0, 6rem;
+    text-align: center;
+  }
+  footer ul li {
     list-style: none;
     margin-bottom: 0.2rem;
     text-align: center;
+  }
 }
-
-@media (min-width: 1200px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    footer h4 {
-        font-size: 1.5rem;
-        margin-bottom: 0, 6rem;
-        text-align: center;
-    }
-
-    footer ul li {
-        list-style: none;
-        margin-bottom: 0.2rem;
-        text-align: center;
-    }
-}
-
 header {
-    background-color: darkgrey;
-    color: black;
-    padding: 1rem;
+  background-color: darkgrey;
+  color: black;
+  padding: 1rem;
 }
 
 header h1 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family: cursive;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: fantasy;
+  font-size: 2rem;
 }
 
 header ul {
-    text-align: center;
-    list-style: none;
-    margin-bottom: 1rem;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
 header form {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px;
-    }
-
-    header form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0, 5rem;
-    }
-
-    header nav {
-        grid-column: span 2;
-    }
-
-    header ul {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .cont-titulo-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .cont-titulo-header h1 {
-        margin: 0;
-    }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px;
+  }
+  header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0, 5rem;
+  }
+  header nav {
+    grid-column: span 2;
+  }
+  header ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.caja-formulario {
+  background-color: beige;
+  padding: 20px;
 }
 
-@media (min-width: 1200px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.formulario-input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.formulario-button {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border: 0, 5rem;
 }
 
 .galeria {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .alineacion-titulos {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .contenedor-galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
 }
 
 .contenedor-galeria img {
-    max-height: 350px;
-    object-fit: cover;
+  max-height: 350px;
+  object-fit: cover;
 }
 
-.grid-container-encasa {
-    background-color: grey;
-    height: auto;
-    align-items: stretch;
-    display: grid;
-    gap: 1rem;
-    margin: 0% 10% 0% 10%;
-}
-
-.imagenes-container-encasa {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
+.tarjetas-central-general {
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  background-color: beige;
+  margin: 1% 20% 0% 20%;
+  padding: 2% 10% 2% 10%;
 }
 
 @media (min-width: 768px) {
-    .contenedor-galeria {
-        display: grid;
-    }
-
-    .contenedor-galeria img.imagen-destacada {
-        width: 100%;
-        max-height: 100%;
-        grid-column: span 2;
-        grid-row: span 2;
-    }
+  .contenedor-galeria {
+    display: grid;
+  }
+  .contenedor-galeria img.imagen-destacada {
+    width: 100%;
+    max-height: 100%;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 }
-
 @media (min-width: 1200px) {
-    .contenedor-galeria {
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: repeat(2, 300px);
-    }
-
-    .contenedor-galeria img.imagen-destacada {
-        grid-column: span 1;
-        grid-row: span 2;
-    }
+  .contenedor-galeria {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 300px);
+  }
+  .contenedor-galeria img.imagen-destacada {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+.imagenes-container-encasa {
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  background-color: beige;
+  margin: 1% 20% 0% 20%;
+  padding: 2% 10% 2% 10%;
 }
 
 .caja-familia {
-    background-color: darkgrey;
-    color: black;
-    padding: 5% 40% 5% 5%;
-    margin: 2% 0% 2% 0%;
-    position: relative;
+  background-color: darkgrey;
+  color: black;
+  padding: 5% 40% 5% 5%;
+  margin: 2% 0% 2% 0%;
+  position: relative;
 }
 
 .imagen-caja-familia {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 25%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30%;
+}
+.imagen-caja-familia:hover {
+  width: 25%;
 }
 
 .titulo-destacadas {
-    background-color: cornflowerblue;
-    text-align: center;
-    height: auto;
+  background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
+  text-align: center;
+  height: auto;
 }
 
 .contenedor-vertical-central {
-    background-color: grey;
-    height: auto;
-    align-items: stretch;
-    display: grid;
-    gap: 1rem;
-    margin: 0% 10% 0% 10%;
+  background-color: grey;
+  height: auto;
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  margin: 0% 10% 1% 10%;
+  padding: 2% 1% 2% 1%;
+  box-shadow: 14px 14px 14px 14px #000000;
 }
 
 .tarjeta-importancia {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  background-color: beige;
+  margin: 1% 20% 0% 20%;
+  padding: 2% 10% 2% 10%;
+  box-shadow: 10px 10px 10px 10px #000000;
 }
-
-.tarjeta-humanista {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-}
-
-.tarjeta-realidad {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-}
-
-.otras-tarjetas {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 2% 20%;
-    padding: 2% 10% 2% 10%;
+.tarjeta-importancia:hover {
+  background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,18 +4,21 @@
     padding: 5% 40% 5% 5%;
     margin: 2% 0% 2% 0%;
     position: relative;
-
 }
-.imagen-caja-familia{
+
+.imagen-caja-familia {
     position: absolute;
     right: 0px;
     top: 0px;
-    width: 25%;
+    width: 30%;
+
+    &:hover {
+        width: 25%;
+    }
 }
 
-
 .titulo-destacadas {
-    background-color: cornflowerblue;
+    background: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
     height: auto;
 }
@@ -26,42 +29,21 @@
     align-items: stretch;
     display: grid;
     gap: 1rem;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 10% 1% 10%;
+    padding: 2% 1% 2% 1%;
+    box-shadow: 14px 14px 14px 14px #000000;
+
 
 }
 
 .tarjeta-importancia {
+    @include formato-texto-tarjetas;
     display: grid;
-    text-align: center;
     background-color: beige;
-    font-size: 1rem;
     margin: 1% 20% 0% 20%;
     padding: 2% 10% 2% 10%;
-}
-
-.tarjeta-humanista {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-}
-
-.tarjeta-realidad {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-}
-
-.otras-tarjetas {
-    display: grid;
-    text-align: center;
-    background-color: beige;
-    font-size: 1rem;
-    margin: 1% 20% 2% 20%;
-    padding: 2% 10% 2% 10%;
+    box-shadow: 10px 10px 10px 10px #000000;
+    &:hover {
+        background: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
+    }
 }

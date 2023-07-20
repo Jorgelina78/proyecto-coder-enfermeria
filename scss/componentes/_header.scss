@@ -2,14 +2,13 @@ header {
     background-color: darkgrey;
     color: black;
     padding: 1rem;
-
 }
 
 header h1 {
     text-align: center;
     margin-bottom: 1rem;
-    font-family: cursive;
-
+    font-family: fantasy;
+    font-size: 2rem;
 }
 
 header ul {
@@ -44,21 +43,12 @@ header form {
         justify-content: center;
         gap: 2rem;
     }
-
-    .cont-titulo-header {
-        display: flex;
-        align-items: center;
-    }
-
-    .cont-titulo-header h1 {
-        margin: 0;
-    }
 }
+
 @media (min-width:1200px) {
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
 }

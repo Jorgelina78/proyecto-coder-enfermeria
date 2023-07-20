@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  background-color: cadetblue;
+
+  height: 100vh;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.caja {
+  font-size: 2.5rem;
+  line-height: 80px;
+  text-align: center;
+  background-color: tomato;
+  border: 5px solid black;
+  width: 250px;
+  height: 250px;
+
+  /* ---- Gradientes ---- 
+  linear-gradient(90deg, #ff0000 0% 40%, yellow 40% 50%);
+  repeating-linear-gradient( to bottom right,black 0% 5%, white 5% 10%);
+  background: radial-gradient(circle at 250px 150px, red, yellow);
+  */
+
+  /* ---- Sombras ----
+  text-shadow: ejeX ejeY desefonque color;
+  box-shadow: ejeX ejeY desefonque factor-de-crecimiento color;
+  filter: drop-shadow(5px 5px 3px);
+  */
+
+  /* -------- Transformaciones ------------ */
+
+  /* Translacion 
+  transform: translate(ejeX, ejeY); |   translatey(); | translatex();
+  translate: 200px 200px;
+  */
+
+  /* Rotaciones 
+  transform: rotate(270deg)  rotatex(360deg) rotatey(360deg);
+  rotate: y 45deg;
+  */
+
+  /* Escalado
+  transform: scale(2, 0.5);
+  scale: ;
+  */
+
+  /* Deformacion
+    transform: skewY(0deg) skewX();
+  */
+
+  /* ----- Transiciones ------ */
+  /* transition-duration: 4s; ---> Duracion
+  transition-property: all; ---> A que propiedad le aplicamos la transicion
+  transition-delay: 2s; ---> Delay para comenzar la transicion
+  transition-timing-function: ease-in-out; ---> Ritmo de la transicion
+  transition: 4s all 1s linear;
+  */
+
+  /* ----- Animaciones ----- */
+
+  animation-name: animacion;
+  /* Duracion */
+  animation-duration: 5s;
+  animation-delay: 3s;
+
+  /* Cuantas veces sucede la animacion */
+  animation-iteration-count: 1;
+
+  animation-direction: normal;
+
+  animation-fill-mode: both;
+}
+
+@keyframes animacion {
+  0% {
+    background-color: crimson;
+  }
+
+  25% {
+    transform: translate(800px, 0px);
+    background-color: blue;
+  }
+
+  50% {
+    transform: translate(0px, 750px);
+    background-color: red;
+  }
+
+  75% {
+    transform: translate(800px, 750px);
+    background-color: green;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    background-color: yellow;
+  }
+}
