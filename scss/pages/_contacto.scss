@@ -2,19 +2,3 @@
     background-color: $color-fondo-primario;
     padding: 20px;
 }
-
-.formulario {
-    display: flex;
-    flex-direction: row;
-}
-
-.formulario-input {
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.formulario-button {
-    padding: 10px 20px;
-    background-color: $color-primario;
-    border: 0, 5rem;
-}

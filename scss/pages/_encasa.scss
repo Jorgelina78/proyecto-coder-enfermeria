@@ -18,13 +18,7 @@
     }
 }
 
-.tarjetas-central-general {
-    @include formato-texto-tarjetas;
-    display: grid;
-    background-color: $color-fondo-primario;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-}
+
 @media (min-width:768px) {
     .contenedor-galeria {
         display: grid;

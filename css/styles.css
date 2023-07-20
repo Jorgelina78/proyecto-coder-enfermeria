@@ -13,13 +13,15 @@ img {
   max-width: 100%;
 }
 
-.caja-contenedora-principal {
+.contenedor-vertical-central {
   background-color: grey;
   height: auto;
   align-items: stretch;
   display: grid;
   gap: 1rem;
-  margin: 0% 10% 0% 10%;
+  margin: 0% 10% 1% 10%;
+  padding: 2% 1% 2% 1%;
+  box-shadow: 14px 14px 14px 14px #000000;
 }
 
 footer {
@@ -108,25 +110,37 @@ header form {
     align-items: center;
   }
 }
+.tarjetas-central-general {
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  background-color: beige;
+  margin: 1% 20% 0% 20%;
+  padding: 2% 10% 2% 10%;
+}
+
+.tarjeta-importancia {
+  text-align: center;
+  font-size: 1rem;
+  display: grid;
+  background-color: beige;
+  margin: 1% 20% 0% 20%;
+  padding: 2% 10% 2% 10%;
+}
+.tarjeta-importancia:hover {
+  transition: 0.5s;
+  background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
+  box-shadow: 10px 10px 10px 10px #000000;
+}
+.tarjeta-importancia iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .caja-formulario {
   background-color: beige;
   padding: 20px;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: row;
-}
-
-.formulario-input {
-  margin-bottom: 10px;
-  padding: 5px;
-}
-
-.formulario-button {
-  padding: 10px 20px;
-  background-color: grey;
-  border: 0, 5rem;
 }
 
 .galeria {
@@ -147,15 +161,6 @@ header form {
 .contenedor-galeria img {
   max-height: 350px;
   object-fit: cover;
-}
-
-.tarjetas-central-general {
-  text-align: center;
-  font-size: 1rem;
-  display: grid;
-  background-color: beige;
-  margin: 1% 20% 0% 20%;
-  padding: 2% 10% 2% 10%;
 }
 
 @media (min-width: 768px) {
@@ -179,13 +184,18 @@ header form {
     grid-row: span 2;
   }
 }
-.imagenes-container-encasa {
+.tarjeta-seccion-estudiante {
   text-align: center;
   font-size: 1rem;
   display: grid;
   background-color: beige;
   margin: 1% 20% 0% 20%;
   padding: 2% 10% 2% 10%;
+}
+.tarjeta-seccion-estudiante video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .caja-familia {
@@ -195,14 +205,13 @@ header form {
   margin: 2% 0% 2% 0%;
   position: relative;
 }
-
-.imagen-caja-familia {
+.caja-familia img {
   position: absolute;
   right: 0px;
   top: 0px;
   width: 30%;
 }
-.imagen-caja-familia:hover {
+.caja-familia img:hover {
   width: 25%;
 }
 
@@ -210,31 +219,6 @@ header form {
   background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
   text-align: center;
   height: auto;
-}
-
-.contenedor-vertical-central {
-  background-color: grey;
-  height: auto;
-  align-items: stretch;
-  display: grid;
-  gap: 1rem;
-  margin: 0% 10% 1% 10%;
-  padding: 2% 1% 2% 1%;
-  box-shadow: 14px 14px 14px 14px #000000;
-}
-
-.tarjeta-importancia {
-  text-align: center;
-  font-size: 1rem;
-  display: grid;
-  background-color: beige;
-  margin: 1% 20% 0% 20%;
-  padding: 2% 10% 2% 10%;
-}
-.tarjeta-importancia:hover {
-  transition: 0.5s;
-  background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
-  box-shadow: 10px 10px 10px 10px #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */

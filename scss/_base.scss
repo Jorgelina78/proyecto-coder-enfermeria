@@ -23,13 +23,15 @@ $color-fondo-primario: beige;
 $color-degradee-primario: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
 $color-sombras-primario: #000000;
 
-.caja-contenedora-principal {
-    background-color: $color-primario;
+.contenedor-vertical-central {
+    background-color: grey;
     height: auto;
     align-items: stretch;
     display: grid;
     gap: 1rem;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 10% 1% 10%;
+    padding: 2% 1% 2% 1%;
+    box-shadow: 14px 14px 14px 14px #000000;
 }
 
 

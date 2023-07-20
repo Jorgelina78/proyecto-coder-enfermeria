@@ -4,16 +4,14 @@
     padding: 5% 40% 5% 5%;
     margin: 2% 0% 2% 0%;
     position: relative;
-}
-
-.imagen-caja-familia {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 30%;
-
-    &:hover {
-        width: 25%;
+    & img {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 30%;
+        &:hover {
+            width: 25%;
+        }
     }
 }
 
@@ -21,28 +19,4 @@
     background: $color-degradee-primario;
     text-align: center;
     height: auto;
-}
-
-.contenedor-vertical-central {
-    background-color: grey;
-    height: auto;
-    align-items: stretch;
-    display: grid;
-    gap: 1rem;
-    margin: 0% 10% 1% 10%;
-    padding: 2% 1% 2% 1%;
-    box-shadow: 14px 14px 14px 14px #000000;
-}
-
-.tarjeta-importancia {
-    @include formato-texto-tarjetas;
-    display: grid;
-    background-color: $color-fondo-primario;
-    margin: 1% 20% 0% 20%;
-    padding: 2% 10% 2% 10%;
-    &:hover {
-        transition:.5s;
-        background: $color-degradee-primario;
-        box-shadow: 10px 10px 10px 10px $color-sombras-primario;
-    }
 }
