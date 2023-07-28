@@ -124,8 +124,7 @@ header form {
   font-size: 1rem;
   display: grid;
   background-color: beige;
-  margin: 1% 20% 0% 20%;
-  padding: 2% 10% 2% 10%;
+  border-radius: 10%;
 }
 .tarjeta-importancia:hover {
   transition: 0.5s;
@@ -137,7 +136,34 @@ header form {
   height: 100%;
   object-fit: contain;
 }
+.tarjeta-importancia img {
+  border-radius: 10%;
+}
 
+@media (min-width: 678px) {
+  .tarjeta-importancia {
+    text-align: center;
+    font-size: 1rem;
+    display: grid;
+    background-color: beige;
+    margin: 1% 20% 0% 20%;
+    padding: 2% 10% 2% 10%;
+    border-radius: 10%;
+  }
+  .tarjeta-importancia:hover {
+    transition: 0.5s;
+    background: linear-gradient(180deg, rgb(100, 120, 237) 33%, rgb(255, 255, 255) 100%);
+    box-shadow: 10px 10px 10px 10px #000000;
+  }
+  .tarjeta-importancia iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .tarjeta-importancia img {
+    border-radius: 10%;
+  }
+}
 .caja-formulario {
   background-color: beige;
   padding: 20px;
@@ -198,6 +224,17 @@ header form {
   object-fit: contain;
 }
 
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(1) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 .caja-familia {
   background-color: grey;
   color: #000000;
@@ -212,7 +249,7 @@ header form {
   width: 30%;
 }
 .caja-familia img:hover {
-  width: 25%;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
 .titulo-destacadas {

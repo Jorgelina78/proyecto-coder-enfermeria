@@ -1,16 +1,37 @@
+@mixin rotate-scale-up {
+    animation: rotate-scale-up 0.65s linear both;
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        transform: scale(1) rotateZ(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+
 .caja-familia {
     background-color: $color-primario;
     color: $color-sombras-primario;
     padding: 5% 40% 5% 5%;
     margin: 2% 0% 2% 0%;
     position: relative;
+
     & img {
         position: absolute;
         right: 0px;
         top: 0px;
         width: 30%;
+
         &:hover {
-            width: 25%;
+            @include rotate-scale-up;
         }
     }
 }
