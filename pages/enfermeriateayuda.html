@@ -7,28 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
     <meta name="description" content="enfermeria te ayuda en casa">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        </style> 
     <title>Enfermería en casa</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>Enfermeria en casa</h1>
-        </div>
-        <form>
-            <input type="search" placeholder="Buscar..." />
-            <input type="submit" value="Enviar" />
-        </form>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Quienes somos</a></li>
-                <li><a href="./enfermeriateayuda.html">Enfermeria en casa</a></li>
-                <li><a href="./estudiantes.html">Estudiantes</a></li>
-                <li><a href="./lugares de interes.html">Lugares de interes</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="">
+                    <img src="../img/enfermeria.jpg" alt="logo" width="80px">
+                </a>
 
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./enfermeriateayuda.html">Enfermeria te ayuda</a></li>
+                                <li><a class="dropdown-item" href="./estudiantes.html">Estudiantes</a></li>
+                                <li><a class="dropdown-item" href="./lugares de interes.html">Lugares de interes</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                    <div class="ms-auto me-auto mb-2 mb-lg-0 titulo-header">
+                        <h2>Enfermería en casa</h2>
+                    </div>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
 
     </header>
@@ -41,11 +73,11 @@
         <section class="galeria">
             <h2 class="alineacion-titulos">Cuidados en casa</h2>
             <div class="contenedor-galeria">
-                <img src="../img/herbs-5145166_1920.jpg" alt="" class="imagen-destacada">
-                <img src="../img/diabetes-g728d87ae2_1280.jpg" alt="">
-                <img src="../img/cpr-g2c2697ef3_1280.jpg" alt="">
-                <img src="../img/headache-1540220_1280.jpg" alt="">
-                <img src="../img/meditation-gc6f38d72d_640.jpg" alt="">
+                <img src="../img/herbs-5145166_1920.jpg" alt="Hierbas" class="imagen-destacada">
+                <img src="../img/diabetes-g728d87ae2_1280.jpg" alt="Diabetes">
+                <img src="../img/cpr-g2c2697ef3_1280.jpg" alt="Rcp">
+                <img src="../img/headache-1540220_1280.jpg" alt="pastillas">
+                <img src="../img/meditation-gc6f38d72d_640.jpg" alt="meditación">
             </div>
         </section>
 
@@ -68,7 +100,7 @@
                     apoyados en esta etapa de sus vidas..</p>
             </div>
             <div class="tarjeta-importancia">
-                <img src="../img/breastfeeding-g538ac83a5_1280.jpg" alt="">
+                <img src="../img/breastfeeding-g538ac83a5_1280.jpg" alt="Posición bebé">
                 <h3>Como posicionar al bebe para una correcta lactancia</h3>
                 <p>"La lactancia materna y el cuidado enfermero: una combinación poderosa para promover la salud y el
                     bienestar de los recién nacidos y sus madres. Descubre cómo estos dos pilares fundamentales de la
@@ -126,6 +158,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>

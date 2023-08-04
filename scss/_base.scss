@@ -17,11 +17,13 @@ img {
     text-align: center;
     font-size: 1rem;
 }
-
+$color-fondo-header: linear-gradient(180deg, grey 70%, rgba(255, 255, 255, 1) 100%); 
 $color-primario: grey;
 $color-fondo-primario: beige;
 $color-degradee-primario: linear-gradient(180deg, rgba(100, 120, 237, 1) 33%, rgba(255, 255, 255, 1) 100%);
 $color-sombras-primario: #000000;
+
+
 
 .contenedor-vertical-central {
     background-color: grey;

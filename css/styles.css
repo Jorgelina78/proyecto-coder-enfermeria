@@ -59,57 +59,15 @@ footer ul li {
     text-align: center;
   }
 }
-header {
+.navbar {
   background-color: grey;
-  color: #000000;
-  padding: 1rem;
+  font-size: large;
 }
 
-header h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-family: fantasy;
-  font-size: 2rem;
+.titulo-header {
+  font-family: "Lobster", cursive;
 }
 
-header ul {
-  text-align: center;
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-header form {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px;
-  }
-  header form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0, 5rem;
-  }
-  header nav {
-    grid-column: span 2;
-  }
-  header ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
-@media (min-width: 1200px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 .tarjetas-central-general {
   text-align: center;
   font-size: 1rem;
